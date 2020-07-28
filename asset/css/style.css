@@ -1,0 +1,367 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+  font-family: "Inter", sans-serif;
+  background-image: url("../image/pattern-curve.svg");
+  background-size: 50% 25%;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  font-size: 32px;
+  min-height: 99vh;
+}
+
+.wrapper {
+  height: 80vh;
+  margin: 0 0 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: space-evenly;
+        -ms-flex-align: space-evenly;
+            align-items: space-evenly;
+    background-size: 100% 20%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .wrapper {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin: 0 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.person-photo-container {
+  background-image: url("../image/pattern-bg.svg");
+  background-size: 67% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 800px;
+  height: 500px;
+  margin: 20px 0 0 0;
+  position: relative;
+  left: 16%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.person-photo-container .person {
+  width: 50%;
+  margin: 50px 0 0 0;
+  -webkit-box-shadow: 10px 29px 74px -35px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 29px 74px -35px rgba(0, 0, 0, 0.75);
+}
+
+.person-photo-container .person img {
+  border-radius: 5px;
+}
+
+.person-photo-container .slider-button-container {
+  position: relative;
+  background-color: white;
+  top: -4%;
+  left: -14.5%;
+  border-radius: 20px;
+}
+
+.person-photo-container .slider-button-container .btn {
+  padding: 8px 13px;
+  background-color: white;
+  border: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  border-radius: 20px;
+}
+
+.person-photo-container #person-2 {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .person-photo-container {
+    background-size: 90% 100%;
+    width: 100%;
+    height: 70%;
+    margin: 0 0 0 0;
+    position: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .person-photo-container .person {
+    width: 70%;
+  }
+  .person-photo-container .person img {
+    border-radius: 5px;
+    display: block;
+  }
+  .person-photo-container .slider-button-container {
+    top: -30px;
+    left: -2%;
+    position: relative;
+  }
+  .person-photo-container .slider-button-container .btn {
+    padding: 10px 15px;
+    margin: 0;
+  }
+}
+
+.testimonal-container {
+  width: 600px;
+  margin: 0 0 0 30px;
+  position: absolute;
+  right: 40%;
+  z-index: 10;
+}
+
+.testimonal-container .testimonal {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-image: url("../image/pattern-quotes.svg");
+  background-repeat: no-repeat;
+  background-size: 18% 23%;
+  background-position-x: 23%;
+  padding: 30px;
+}
+
+.testimonal-container .testimonal .testimonal-content {
+  padding: 10px;
+  margin: 0;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.testimonal-container .testimonal .person-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 5px;
+}
+
+.testimonal-container .testimonal .person-details .name {
+  margin: 5px;
+  color: #202046;
+  font-size: 0.6em;
+}
+
+.testimonal-container .testimonal .person-details .role {
+  margin: 5px;
+  color: #babacf;
+  font-size: 0.5em;
+}
+
+.testimonal-container #person-2 {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .testimonal-container {
+    width: 60%;
+    position: initial;
+    margin: 20px 0 0 0;
+  }
+  .testimonal-container .testimonal {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-image: url("../image/pattern-quotes.svg");
+    background-repeat: no-repeat;
+    background-size: 50px 45px;
+    background-position-x: 50%;
+    padding: 10px;
+  }
+  .testimonal-container .testimonal .testimonal-content {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 0.6em;
+    font-weight: 300;
+  }
+  .testimonal-container .testimonal .person-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10px 5px;
+  }
+  .testimonal-container .testimonal .person-details .name {
+    margin: 5px;
+    color: #202046;
+    font-size: 0.6em;
+  }
+  .testimonal-container .testimonal .person-details .role {
+    margin: 5px;
+    color: #babacf;
+    font-size: 0.5em;
+  }
+  .testimonal-container #person-2 {
+    display: none;
+  }
+}
+
+.attribution {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.attribution h6 {
+  margin: 10px 15px;
+  font-size: 0.6em;
+  font-weight: 500;
+}
+
+.attribution h6 a {
+  font-weight: 700;
+  color: #202046;
+}
+
+@media screen and (max-width: 1100px) {
+  .attribution {
+    text-align: center;
+    padding: 0;
+    margin: auto 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .attribution h6 {
+    margin: 10px 15px;
+    font-size: 0.6em;
+    font-weight: 500;
+  }
+  .attribution h6 a {
+    font-weight: 700;
+    color: #202046;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */

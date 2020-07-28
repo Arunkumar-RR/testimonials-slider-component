@@ -1,0 +1,98 @@
+.testimonal-container
+{
+    width: 600px;
+    margin: 0 0 0 30px;
+    position: absolute;
+    right: 40%;
+    z-index: 10;
+    .testimonal
+    {
+        width: fit-content;
+        background-image: url('../image/pattern-quotes.svg');
+        background-repeat: no-repeat;
+        background-size: 18% 23%;
+        background-position-x: 23%;
+        padding: 30px;
+        .testimonal-content
+        {
+            padding: 10px;
+            margin: 0;
+            font-size: $font-size-3;
+            font-weight: map-get($map: $font-weight, $key: light );
+        }    
+        .person-details
+        {
+            @include flex(row, flex-start, center);
+            margin: 10px 5px ;
+            .name
+            {
+                margin: 5px;
+                color: $color-1;
+                font-size: $font-size-4;
+
+            }
+            .role
+            {
+                margin: 5px;
+                color: $color-2;
+                font-size: $font-size-5;
+            }
+        }    
+    }
+    #person-2
+    {
+        display: none;
+
+    }
+}
+
+@include smartphone
+{
+        .testimonal-container
+        {
+            width:  60%;
+            position: initial;
+            margin: 20px 0 0 0;
+            .testimonal
+            {
+                width: fit-content;
+                background-image: url('../image/pattern-quotes.svg');
+                background-repeat: no-repeat;
+                background-size: 50px 45px;
+                background-position-x: 50%;
+                padding: 10px;
+                .testimonal-content
+                {
+                    text-align: center;
+                    padding: 10px;
+                    margin: 0;
+                    font-size: $font-size-4;
+                    font-weight: map-get($map: $font-weight, $key: light );
+                }    
+                .person-details
+                {
+                    @include flex(column, center, center);
+                    margin: 10px 5px ;
+                    .name
+                    {
+                        margin: 5px;
+                        color: $color-1;
+                        font-size: $font-size-4;
+
+                    }
+                    .role
+                    {
+                        margin: 5px;
+                        color: $color-2;
+                        font-size: $font-size-5;
+                    }
+                }    
+            }
+            #person-2
+            {
+                display: none;
+
+            }
+        }
+
+}

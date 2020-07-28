@@ -1,0 +1,37 @@
+body
+{
+    @include flex(column,space-evenly,center);
+
+    font-family: $font-family;
+    background-image: url('../image/pattern-curve.svg');
+    background-size: 50% 25%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    font-size: $font-size;
+    min-height: 99vh;
+}
+.wrapper
+{
+    height: 80vh;
+    margin: 0 0 60px 0;
+    @include flex(row,center,center);
+}
+
+@include smartphone
+{
+    body
+    {
+        @include flex(column,space-evenly,flex-start);
+        background-size: 100% 20%;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        height: max-content;
+        
+    }
+    .wrapper
+    {
+        height: max-content;
+        margin: 0 0 0 0;
+        @include flex(column-reverse,center,center);
+    }
+}
