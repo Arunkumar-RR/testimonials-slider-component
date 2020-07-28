@@ -1,5 +1,5 @@
 var person = document.getElementsByClassName("person");
-var testimonal = document.getElementsByClassName("testimonial");
+var testimonial = document.getElementsByClassName("testimonial");
 var slideIndex = 1;
 
 function slide(n)
