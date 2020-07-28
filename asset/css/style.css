@@ -180,7 +180,7 @@ body {
   }
 }
 
-.testimonal-container {
+.testimonial-container {
   width: 600px;
   margin: 0 0 0 30px;
   position: absolute;
@@ -188,7 +188,7 @@ body {
   z-index: 10;
 }
 
-.testimonal-container .testimonal {
+.testimonial-container .testimonial {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -199,14 +199,14 @@ body {
   padding: 30px;
 }
 
-.testimonal-container .testimonal .testimonal-content {
+.testimonial-container .testimonial .testimonial-content {
   padding: 10px;
   margin: 0;
   font-size: 0.8em;
   font-weight: 300;
 }
 
-.testimonal-container .testimonal .person-details {
+.testimonial-container .testimonial .person-details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,29 +223,29 @@ body {
   margin: 10px 5px;
 }
 
-.testimonal-container .testimonal .person-details .name {
+.testimonial-container .testimonial .person-details .name {
   margin: 5px;
   color: #202046;
   font-size: 0.6em;
 }
 
-.testimonal-container .testimonal .person-details .role {
+.testimonial-container .testimonial .person-details .role {
   margin: 5px;
   color: #babacf;
   font-size: 0.5em;
 }
 
-.testimonal-container #person-2 {
+.testimonial-container #person-2 {
   display: none;
 }
 
 @media screen and (max-width: 1100px) {
-  .testimonal-container {
+  .testimonial-container {
     width: 60%;
     position: initial;
     margin: 20px 0 0 0;
   }
-  .testimonal-container .testimonal {
+  .testimonial-container .testimonial {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -255,14 +255,14 @@ body {
     background-position-x: 50%;
     padding: 10px;
   }
-  .testimonal-container .testimonal .testimonal-content {
+  .testimonial-container .testimonial .testimonial-content {
     text-align: center;
     padding: 10px;
     margin: 0;
     font-size: 0.6em;
     font-weight: 300;
   }
-  .testimonal-container .testimonal .person-details {
+  .testimonial-container .testimonial .person-details {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -278,17 +278,17 @@ body {
             align-items: center;
     margin: 10px 5px;
   }
-  .testimonal-container .testimonal .person-details .name {
+  .testimonial-container .testimonial .person-details .name {
     margin: 5px;
     color: #202046;
     font-size: 0.6em;
   }
-  .testimonal-container .testimonal .person-details .role {
+  .testimonial-container .testimonial .person-details .role {
     margin: 5px;
     color: #babacf;
     font-size: 0.5em;
   }
-  .testimonal-container #person-2 {
+  .testimonial-container #person-2 {
     display: none;
   }
 }

@@ -1,5 +1,5 @@
 var person = document.getElementsByClassName("person");
-var testimonal = document.getElementsByClassName("testimonal");
+var testimonal = document.getElementsByClassName("testimonial");
 var slideIndex = 1;
 
 function slide(n)
@@ -20,9 +20,9 @@ function showSlides(n)
     for (i = 0; i < person.length; i++) 
     {
         person[i].style.display = "none";
-        testimonal[i].style.display = "none";
+        testimonial[i].style.display = "none";
     }
     person[slideIndex-1].style.display = "block";
-    testimonal[slideIndex-1].style.display = "block";
+    testimonial[slideIndex-1].style.display = "block";
 
   }
